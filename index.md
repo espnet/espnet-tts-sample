@@ -10,7 +10,7 @@ Welcome to the demo page for Text-to-Speech (TTS) of [ESPnet](https://github.com
 
 | Corpus | Model | Link |  
 | --- | --- | --- |  
-| libritts | tacotron2.v1 | [egs/libritts.tacotron2.v1/](https://espnet.github.ioespnet-tts-sample/egs/libritts/tacotron2.v1/) |  
+| libritts | tacotron2.v1 | [egs/libritts.tacotron2.v1/](https://espnet.github.io/espnet-tts-sample/egs/libritts/tacotron2.v1/) |  
 | libritts | transformer.v1 | [egs/libritts.transformer.v1/](https://espnet.github.io/espnet-tts-sample/egs/libritts/transformer.v1/) |  
 | ljspeech | tacotron2.v1 | [egs/ljspeech.tacotron2.v1/](https://espnet.github.io/espnet-tts-sample/egs/ljspeech/tacotron2.v1/) |  
 | ljspeech | tacotron2.v2 | [egs/ljspeech.tacotron2.v2/](https://espnet.github.io/espnet-tts-sample/egs/ljspeech/tacotron2.v2/) |  
