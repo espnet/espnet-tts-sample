@@ -22,9 +22,40 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Audio samples
 
-<audio controls src="audio/eval/LJ050-0029.wav"> </audio>  
+1. **Ground truth**: Recorded speech
+2. **Tacotron2.v1-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorythm)  
+3. **Tacotron2.v1-WNV**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: WaveNet vocoder)  
 
-<audio controls=""><source src="https://espnet.github.io/espnet-tts-sample/egs/ljspeech/tacotron2.v1/audio/eval/LJ050-0029.wav" type="audio/wav"></audio>
+### Sample1  
+
+| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| --- | --- | --- |  
+| NULL | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
+
+### Sample2  
+
+| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| --- | --- | --- |  
+| NULL | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
+
+### Sample3  
+
+| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| --- | --- | --- |  
+| NULL | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
+
+### Sample4  
+
+| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| --- | --- | --- |  
+| NULL | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
+
+### Sample5  
+
+| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| --- | --- | --- |  
+| NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+
 
 ## References
 
