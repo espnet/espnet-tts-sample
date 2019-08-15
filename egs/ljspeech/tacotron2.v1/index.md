@@ -32,39 +32,38 @@ v.0.4.0: tacotron2.v1
 ## Environments
 
 <details><summary>Click to check detail.</summary>
-```
+
 - date: `Mon Jun 10 10:15:51 JST 2019`
 - python version: `Python 3.7.3`
 - espnet version: `espnet 0.3.1`
 - chainer version: `chainer 5.0.0`
 - pytorch version: `pytorch 1.0.1.post2`
 - Git hash: `c86e9311641f59fa397912d0bd2b9c0c599a1127`
-```
+
 </details>
 
 ## Model files
 
 <details><summary>Click to check detail.</summary>
-```
-- model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs
-- training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`
-- decoding config file: `conf/decode.yaml`
-- cmvn file: `data/train_no_dev/cmvn.ark`
-- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`
-- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`
-- dict file: `data/lang_1char/train_no_dev_units.txt`
-```
+
+- model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs  
+- training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
+- decoding config file: `conf/decode.yaml`  
+- cmvn file: `data/train_no_dev/cmvn.ark`  
+- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`  
+- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`  
+- dict file: `data/lang_1char/train_no_dev_units.txt`  
+
 </details>
 
 ## Audio samples
 
-All samples  
-https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
-
+<!--
 | Audio parameter | Setting |  
 | --- | --- |  
 | Sampling frequency | 22050 Hz |  
 | Quantization | 16 bit, LinearPCM |  
+-->
 
 1. **Ground truth**: Recorded speech
 2. **Tacotron2.v1-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
@@ -99,6 +98,10 @@ https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+
+### Other samples  
+
+https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
 
 ## References
 
