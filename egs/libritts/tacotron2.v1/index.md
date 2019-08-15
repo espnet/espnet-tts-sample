@@ -1,4 +1,4 @@
-# ljspeech.tacotron2.v1
+# libritts.tacotron2.v1
 
 ## Creator
 - Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  

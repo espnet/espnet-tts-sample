@@ -1,4 +1,4 @@
-# ljspeech.tacotron2.v1
+# ljspeech.tacotron2.v3
 
 ## Creator
 - Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
@@ -28,36 +28,36 @@ The recovery of the phase components is the same as `tts1`.
 | Quantization | 16 bit, LinearPCM |  
 
 1. **Ground truth**: Recorded speech
-2. **Tacotron2.v1-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
-3. **Tacotron2.v1-WNV**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: WaveNet vocoder)  
+2. **Tacotron2.v3-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
+3. **Tacotron2.v3-WNV**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: WaveNet vocoder)  
 
 ### Sample1  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| **Ground truth** | **Tacotron2.v3-GL** | **Tacotron2.v3-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
 
 ### Sample2  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| **Ground truth** | **Tacotron2.v3-GL** | **Tacotron2.v3-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
 
 ### Sample3  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| **Ground truth** | **Tacotron2.v3-GL** | **Tacotron2.v3-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
 
 ### Sample4  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| **Ground truth** | **Tacotron2.v3-GL** | **Tacotron2.v3-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
 
 ### Sample5  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+| **Ground truth** | **Tacotron2.v3-GL** | **Tacotron2.v3-WNV** |  
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
 
