@@ -32,6 +32,7 @@ v.0.4.0: tacotron2.v1
 ## Environments
 
 <details><summary>Click to check detail.</summary>
+<dev>
 
 - date: `Mon Jun 10 10:15:51 JST 2019`
 - python version: `Python 3.7.3`
@@ -40,11 +41,13 @@ v.0.4.0: tacotron2.v1
 - pytorch version: `pytorch 1.0.1.post2`
 - Git hash: `c86e9311641f59fa397912d0bd2b9c0c599a1127`
 
+</dev>
 </details>
 
 ## Model files
 
 <details><summary>Click to check detail.</summary>
+<dev>
 
 - model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs  
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
@@ -54,6 +57,7 @@ v.0.4.0: tacotron2.v1
 - e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`  
 - dict file: `data/lang_1char/train_no_dev_units.txt`  
 
+</dev>
 </details>
 
 ## Audio samples
@@ -101,7 +105,7 @@ v.0.4.0: tacotron2.v1
 
 ### Other samples  
 
-https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
+[Google Drive](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)
 
 ## References
 
