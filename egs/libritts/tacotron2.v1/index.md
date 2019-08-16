@@ -5,7 +5,7 @@
 
 ## Abstract
 
-This demo is about LibriTTS [1].
+This is tts demo of LibriTTS [1].
 
 ## Model
 
@@ -85,7 +85,7 @@ v.0.3.0: multi-speaker Tacotron2.v1
 
 ## References
 
-- [1] "LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech," [http://www.openslr.org/12](http://www.openslr.org/12).
+- [1] "LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech," [http://www.openslr.org/60/](http://www.openslr.org/60/).
 
 
 <!--

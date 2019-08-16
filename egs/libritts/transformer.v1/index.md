@@ -5,7 +5,7 @@
 
 ## Abstract
 
-This demo is about LibriTTS [1].
+This is tts demo of LibriTTS [1].
 
 ## Model
 
@@ -85,7 +85,7 @@ v.0.5.0: First multi-speaker Transformer
 
 ## References
 
-- [1] "LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech," [http://www.openslr.org/12](http://www.openslr.org/12).
+- [1] "LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech," [http://www.openslr.org/60/](http://www.openslr.org/60/).
 
 <!--
 ## Acknowledgements
