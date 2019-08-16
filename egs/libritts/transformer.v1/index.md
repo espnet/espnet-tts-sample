@@ -5,22 +5,33 @@
 
 ## Abstract
 
-### tts1 recipe
-
-`tts1` recipe is based on Tacotron2 [1] (spectrogram prediction network) w/o WaveNet.
-Tacotron2 generates log mel-filter bank from text and then converts it to linear spectrogram using inverse mel-basis.
-Finally, phase components are recovered with Griffin-Lim.
-
-(2019/06/16) we also support TTS-Transformer [3].  
-(2019/06/17) we also support Feed-forward Transformer [4].  
-
-### tts2 recipe
-
-`tts2` recipe is based on Tacotron2's spectrogram prediction network [1] and Tacotron's CBHG module [2].
-Instead of using inverse mel-basis, CBHG module is used to convert log mel-filter bank to linear spectrogram.
-The recovery of the phase components is the same as `tts1`.
-
 ## Model
+
+v.0.5.0: First multi-speaker Transformer
+- 1024 pt window
+- 256 pt shift
+- x-vector with add integration
+- fast GL 64 iters
+
+## Environments
+
+- date: `Mon Aug 12 20:14:55 JST 2019`
+- python version: `3.7.3 (default, Mar 27 2019, 22:11:17)  [GCC 7.3.0]`
+- espnet version: `espnet 0.5.0`
+- chainer version: `chainer 6.0.0`
+- pytorch version: `pytorch 1.0.1.post2`
+- Git hash: `d359148ebecf16440526cf0b326dde58960e2d16`
+  - Commit date: `Sun Aug 11 23:08:55 2019 +0900`
+
+## Model files
+
+- model link: [https://drive.google.com/open?id=1Xj73mDPuuPH8GsyNO8GnOC3mn0_OK4g3](https://drive.google.com/open?id=1Xj73mDPuuPH8GsyNO8GnOC3mn0_OK4g3)
+- training config file: `conf/train_pytorch_transformer+spkemb.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_clean_460/cmvn.ark`
+- e2e file: `exp/train_clean_460_pytorch_train_pytorch_transformer+spkemb/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_clean_460_pytorch_train_pytorch_transformer+spkemb/results/model.json`
+- dict file: `data/lang_1char/train_clean_460_units.txt`
 
 ## Audio samples
 
@@ -67,15 +78,12 @@ The recovery of the phase components is the same as `tts1`.
 
 ### Other samples  
 
-[]()
+[https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp](https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp)
 
 
 ## References
 
-- [1] Shen, Jonathan, et al. "Natural TTS synthesis by conditioning wavenet on mel spectrogram predictions." arXiv preprint [arXiv:1712.05884](https://arxiv.org/abs/1712.05884) (2017).
-- [2] Wang, Yuxuan, et al. "Tacotron: Towards end-to-end speech synthesis." arXiv preprint [arXiv:1703.10135](https://arxiv.org/abs/) (2017).
-- [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
-- [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
+
 
 <!--
 ## Acknowledgements
