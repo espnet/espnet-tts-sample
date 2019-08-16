@@ -31,9 +31,6 @@ v.0.4.0: tacotron2.v1
 
 ## Environments
 
-<details><summary>Click to check detail.</summary><dev>
-
-
 - date: `Mon Jun 10 10:15:51 JST 2019`
 - python version: `Python 3.7.3`
 - espnet version: `espnet 0.3.1`
@@ -41,11 +38,7 @@ v.0.4.0: tacotron2.v1
 - pytorch version: `pytorch 1.0.1.post2`
 - Git hash: `c86e9311641f59fa397912d0bd2b9c0c599a1127`
 
-</dev></details>
-
 ## Model files
-
-<details><summary>Click to check detail.</summary>
 
 - model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs  
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
@@ -54,7 +47,6 @@ v.0.4.0: tacotron2.v1
 - e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`  
 - e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`  
 - dict file: `data/lang_1char/train_no_dev_units.txt`  
-</details>
 
 ## Audio samples
 
@@ -73,31 +65,31 @@ v.0.4.0: tacotron2.v1
 
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/graund_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
 
 ### Sample2  
 
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/graund_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
 
 ### Sample3  
 
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/graund_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
 
 ### Sample4  
 
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/graund_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
 
 ### Sample5  
 
 | **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/graund_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
 
 ### Other samples  
 
