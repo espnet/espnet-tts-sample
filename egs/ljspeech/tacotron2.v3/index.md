@@ -22,6 +22,33 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Model
 
+v.0.4.0: tacotron2.v3 
+- 1024 pt window
+- 256 pt shift
+- GL 1000 iters
+- R=1
+- location-sensitive
+- guided-attention
+
+## Environments
+
+- date: `Sun Jun 16 10:03:47 JST 2019`
+- python version: `Python 3.7.3`
+- espnet version: `espnet 0.3.1`
+- chainer version: `chainer 5.0.0`
+- pytorch version: `pytorch 1.0.1.post2`
+- Git hash: `267da3161cefeae72e9a44bd15e74c0d18591fb6`
+
+## Model files
+
+- model link: [https://drive.google.com/open?id=1hiZn14ITUDM1nkn-GkaN_M3oaTOUcn1n](https://drive.google.com/open?id=1hiZn14ITUDM1nkn-GkaN_M3oaTOUcn1n)
+- training config file: `conf/tuning/train_pytorch_tacotron2.v3.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_no_dev/cmvn.ark`
+- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v3/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v3/results/model.json`
+- dict file: `data/lang_1char/train_no_dev_units.txt`
+
 ## Audio samples
 
 <!--
@@ -67,8 +94,7 @@ The recovery of the phase components is the same as `tts1`.
 
 ### Other samples  
 
-[]()
-
+[https://drive.google.com/open?id=18JgsOCWiP_JkhONasTplnHS7yaF_konr](https://drive.google.com/open?id=18JgsOCWiP_JkhONasTplnHS7yaF_konr)
 
 ## References
 
