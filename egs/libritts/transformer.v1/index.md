@@ -20,12 +20,16 @@ Finally, phase components are recovered with Griffin-Lim.
 Instead of using inverse mel-basis, CBHG module is used to convert log mel-filter bank to linear spectrogram.
 The recovery of the phase components is the same as `tts1`.
 
+## Model
+
 ## Audio samples
 
+<!--
 | Audio parameter | Setting |  
 | --- | --- |  
 | Sampling frequency | 22050 Hz |  
 | Quantization | 16 bit, LinearPCM |  
+-->
 
 1. **Ground truth**: Recorded speech
 2. **transformer.v1-GL**: Synthesized speech (Feature generetion:transformer, Waveform synthesis: Griffin-Lim algorithm)  
@@ -61,6 +65,10 @@ The recovery of the phase components is the same as `tts1`.
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
 
+### Other samples  
+
+[]()
+
 
 ## References
 
@@ -69,7 +77,12 @@ The recovery of the phase components is the same as `tts1`.
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
 
+<!--
 ## Acknowledgements
 
+NULL
 
 ## Citation
+
+NULL
+-->

@@ -40,7 +40,7 @@ v.0.4.0: tacotron2.v1
 
 ## Model files
 
-- model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs  
+- model link: [https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs](https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs)
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
 - decoding config file: `conf/decode.yaml`  
 - cmvn file: `data/train_no_dev/cmvn.ark`  
@@ -93,7 +93,7 @@ v.0.4.0: tacotron2.v1
 
 ### Other samples  
 
-[Google Drive](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)
+[https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)
 
 ## References
 
