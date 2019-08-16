@@ -22,6 +22,30 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Model
 
+v.0.5.0: fastspeech.v2
+- 1024 pt window
+- 256 pt shift
+- GL 1000 iters
+
+## Environments
+
+- date: `Wed Jun 26 02:27:43 JST 2019`
+- python version: `3.7.3 (default, Mar 27 2019, 22:11:17)  [GCC 7.3.0]`
+- espnet version: `espnet 0.3.1`
+- chainer version: `chainer 5.0.0`
+- pytorch version: `pytorch 1.0.1.post2`
+- Git hash: `44aa99987ed524dcb5f98421fb3f61df7919ef49`
+
+## Model files
+
+- model link: [https://drive.google.com/open?id=1zD-2GMrWM3thaDpS3h3rkTU4jIC0wc5B](https://drive.google.com/open?id=1zD-2GMrWM3thaDpS3h3rkTU4jIC0wc5B)
+- training config file: `conf/tuning/train_fastspeech.v2.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_no_dev/cmvn.ark`
+- e2e file: `exp/train_no_dev_pytorch_train_fastspeech.v2/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_no_dev_pytorch_train_fastspeech.v2/results/model.json`
+- dict file: `data/lang_1char/train_no_dev_units.txt`
+
 ## Audio samples
 
 <!--
@@ -67,7 +91,7 @@ The recovery of the phase components is the same as `tts1`.
 
 ### Other samples  
 
-[]()
+[https://drive.google.com/open?id=1PSxs1VauIndwi8d5hJmZlppGRVu2zuy5](https://drive.google.com/open?id=1PSxs1VauIndwi8d5hJmZlppGRVu2zuy5)
 
 ## References
 
