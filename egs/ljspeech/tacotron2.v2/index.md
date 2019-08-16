@@ -20,12 +20,43 @@ Finally, phase components are recovered with Griffin-Lim.
 Instead of using inverse mel-basis, CBHG module is used to convert log mel-filter bank to linear spectrogram.
 The recovery of the phase components is the same as `tts1`.
 
+## Model
+
+v.0.4.0: tacotron2.v2
+- 1024 pt window
+- 256 pt shift
+- GL 1000 iters
+- R=1
+- forward with transition agent
+
+## Environments
+
+- date: `Fri Jun 14 10:51:01 JST 2019`
+- system information: `Linux huracan.sp.m.is.nagoya-u.ac.jp 4.4.0-142-generic #168-Ubuntu SMP Wed Jan 16 21:00:45 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux`
+- python version: `Python 3.7.3`
+- espnet version: `espnet 0.3.1`
+- chainer version: `chainer 5.0.0`
+- pytorch version: `pytorch 1.0.1.post2`
+- Git hash: `c86e9311641f59fa397912d0bd2b9c0c599a1127`
+
+## Model files
+
+- model link: [https://drive.google.com/open?id=11T9qw8rJlYzUdXvFjkjQjYrp3iGfQ15h](https://drive.google.com/open?id=11T9qw8rJlYzUdXvFjkjQjYrp3iGfQ15h)
+- training config file: `conf/tuning/train_pytorch_tacotron2.v2.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_no_dev/cmvn.ark`
+- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v2/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v2/results/model.json`
+- dict file: `data/lang_1char/train_no_dev_units.txt`
+
 ## Audio samples
 
+<!--
 | Audio parameter | Setting |  
 | --- | --- |  
 | Sampling frequency | 22050 Hz |  
 | Quantization | 16 bit, LinearPCM |  
+-->
 
 1. **Ground truth**: Recorded speech
 2. **Tacotron2.v2-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
@@ -61,6 +92,9 @@ The recovery of the phase components is the same as `tts1`.
 | --- | --- | --- |  
 | NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
 
+### Other samples  
+
+[https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm](https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm)
 
 ## References
 
@@ -69,7 +103,12 @@ The recovery of the phase components is the same as `tts1`.
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
 
+<!--
 ## Acknowledgements
 
+NULL
 
 ## Citation
+
+NULL
+-->
