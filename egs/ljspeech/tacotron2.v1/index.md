@@ -45,8 +45,7 @@ v.0.4.0: tacotron2.v1
 
 ## Model files
 
-<details><summary>Click to check detail.</summary><dev>
-
+<details><summary>Click to check detail.</summary>
 
 - model link: https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs  
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
@@ -55,8 +54,7 @@ v.0.4.0: tacotron2.v1
 - e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`  
 - e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`  
 - dict file: `data/lang_1char/train_no_dev_units.txt`  
-
-</dev></details>
+</details>
 
 ## Audio samples
 
