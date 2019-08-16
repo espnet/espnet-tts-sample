@@ -22,6 +22,32 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Model
 
+v.0.4.0: transformer.v2
+- 1024 pt window
+- 256 pt shift
+- GL 1000 iters
+- R=3
+- Small
+
+## Environments
+
+- date: `Sun Jun 16 10:03:47 JST 2019`
+- python version: `Python 3.7.3`
+- espnet version: `espnet 0.3.1`
+- chainer version: `chainer 5.0.0`
+- pytorch version: `pytorch 1.0.1.post2`
+- Git hash: `267da3161cefeae72e9a44bd15e74c0d18591fb6`
+
+## Model files
+
+- model link: [https://drive.google.com/open?id=1xxAwPuUph23RnlC5gym7qDM02ZCW9Unp](https://drive.google.com/open?id=1xxAwPuUph23RnlC5gym7qDM02ZCW9Unp)
+- training config file: `conf/tuning/train_pytorch_transformer.v2.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_no_dev/cmvn.ark`
+- e2e file: `exp/train_no_dev_pytorch_train_pytorch_transformer.v2/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_transformer.v2/results/model.json`
+- dict file: `data/lang_1char/train_no_dev_units.txt`
+
 ## Audio samples
 
 <!--
@@ -67,7 +93,7 @@ The recovery of the phase components is the same as `tts1`.
 
 ### Other samples  
 
-[]()
+[https://drive.google.com/open?id=1TqY5cvA2azhl7Xi3E1LFRpsTajlHxO_P](https://drive.google.com/open?id=1TqY5cvA2azhl7Xi3E1LFRpsTajlHxO_P)
 
 
 ## References
