@@ -1,7 +1,7 @@
 # ljspeech.tacotron2.v1
 
 ## Creator
-- Tomoki Hayashi (Nagoya University) <[kan-bayashi][1]>  
+- Tomoki Hayashi (Nagoya University) <[kan-bayashi][creater]>  
 
 ## Abstract
 
@@ -42,7 +42,7 @@ v.0.4.0: tacotron2.v1
 
 ## Model files
 
-- model link: [https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs][2]
+- model link: [Google drive][model]
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
 - decoding config file: `conf/decode.yaml`  
 - cmvn file: `data/train_no_dev/cmvn.ark`  
@@ -95,7 +95,7 @@ v.0.4.0: tacotron2.v1
 
 ### Other samples  
 
-[Google drive][3]
+[Google drive][sample]
 
 ## References
 
@@ -105,9 +105,9 @@ v.0.4.0: tacotron2.v1
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
 
-[1]:https://github.com/kan-bayashi
-[2]:https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs
-[3]:https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
+[creater]:https://github.com/kan-bayashi
+[model]:https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs
+[sample]:https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
 
 <!--
 ## Acknowledgements
