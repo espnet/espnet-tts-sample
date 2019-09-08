@@ -60,49 +60,58 @@ v.0.4.0: tacotron2.v2
 
 ### Sample1  
 
+LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES. "
+
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0029.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0029.wav> </audio> | NULL |  
+| <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0029.wav"> </audio> | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 
 ### Sample2  
 
+LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
+
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0030.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0030.wav> </audio> | NULL |  
+| <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0030.wav"> </audio> | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 
 ### Sample3  
 
+LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATING AND MAINTAINING THE HIGHEST STANDARD OF EXCELLENCE AND ESPRIT, FOR ALL OF ITS PERSONNEL. "
+
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0031.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0031.wav> </audio> | NULL |  
+| <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0031.wav"> </audio> | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 
 ### Sample4  
 
+LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTION OF AN OUTSTANDING DEGREE OF DEDICATION AND LOYALTY TO DUTY. "
+
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0032.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0032.wav> </audio> | NULL |  
+| <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0032.wav"> </audio> | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 
 ### Sample5  
 
+LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN THE ASSASSINATION "
+
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0033.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0033.wav> </audio> | NULL |  
+| <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0033.wav"> </audio> | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
-
 ### Other samples
 
 [https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm](https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm)
