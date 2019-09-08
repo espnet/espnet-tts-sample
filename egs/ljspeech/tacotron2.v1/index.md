@@ -1,7 +1,8 @@
 # ljspeech.tacotron2.v1
 
 ## Creator
-- Tomoki Hayashi (Nagoya University) <[kan-bayashi][creater]>  
+
+- Tomoki Hayashi (Nagoya University) <[kan-bayashi][https://github.com/kan-bayashi]>  
 
 ## Abstract
 
@@ -22,7 +23,7 @@ Finally, phase components are recovered with Griffin-Lim.
 Instead of using inverse mel-basis, CBHG module is used to convert log mel-filter bank to linear spectrogram.
 The recovery of the phase components is the same as `tts1`.
 
-## Model
+## Model config
 
 v.0.4.0: tacotron2.v1 
 - 1024 pt window
@@ -42,7 +43,7 @@ v.0.4.0: tacotron2.v1
 
 ## Model files
 
-- model link: [Google drive][model]
+- model link: [https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs][https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs]
 - training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
 - decoding config file: `conf/decode.yaml`  
 - cmvn file: `data/train_no_dev/cmvn.ark`  
@@ -95,7 +96,7 @@ v.0.4.0: tacotron2.v1
 
 ### Other samples  
 
-[Google drive][sample]
+[https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD][https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD]
 
 ## References
 
@@ -104,10 +105,6 @@ v.0.4.0: tacotron2.v1
 - [2] Wang, Yuxuan, et al. "Tacotron: Towards end-to-end speech synthesis." arXiv preprint [arXiv:1703.10135](https://arxiv.org/abs/) (2017).
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
-
-[creater]:https://github.com/kan-bayashi
-[model]:https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs
-[sample]:https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
 
 <!--
 ## Acknowledgements

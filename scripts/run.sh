@@ -16,40 +16,39 @@ github_id="kan-bayashi"
 egs_name="${corpus}.${model}"
 egs_dir="egs/${corpus}/${model}"
 result_md=data/${corpus}/RESULTS.md
+abst_md=data/${corpus}/Abstract.md
+ref_md=data/${corpus}/Reference.md
 md_file="../${egs_dir}/index.md"
 
 # make index.md
+echo "Stage 1: index.md"
 mkdir -p ../egs/${corpus}/${model}
 cat ../layout/header.md | sed -e "s/tmp_egs/${egs_name}/" > ${md_file}
 echo >> ${md_file}
 
-# make creater info
+# make creater.md
+echo "Stage 2: creater.md"
 local/make_creater_info.sh "${name}" "${belongs}" "${github_id}"
-echo "creater.tmp was made."
 
-# make abstract info
-echo "## Abstract" > abst.tmp
-echo >> abst.tmp
-echo "tmp_abst" >> abst.tmp
-echo "abst.tmp was made."
+# make abstract inf
+echo "Stage 3: abst.md"
+local/make_abst_info.sh ${abst_md}
 
 # make model info from RESULT.md
+echo "Stage 4: model_conf.md"
 local/make_model_info.sh ${model} ${result_md}
-echo "model_conf.tmp was made."
 
 # make audio demo info
-local/make_audio_demo.sh ${egs_dir} 
-echo "audio_demo.tmp was made."
+echo "Stage 5: audio_demo.md"
+local/make_audio_demo.sh ${corpus} ${model}
 
 # make reference info
-echo "## References" > ref.tmp
-echo >> ref.tmp
-echo "- [1]: tmp_abst" >> ref.tmp
-echo "ref.tmp was made."
-
+echo "Stage 6: ref.md"
+local/make_ref_info.sh ${ref_md}
 
 # update index.md
 cat creater.tmp >> ${md_file}
+cat abst.tmp >> ${md_file}
 cat model_conf.tmp >> ${md_file}
 cat env.tmp >> ${md_file}
 cat model_file.tmp >> ${md_file}

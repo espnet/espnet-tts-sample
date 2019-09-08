@@ -1,7 +1,8 @@
 # ljspeech.tacotron2.v2
 
 ## Creator
-- Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
+
+- Tomoki Hayashi (Nagoya University) <[kan-bayashi][https://github.com/kan-bayashi]>  
 
 ## Abstract
 
@@ -24,12 +25,12 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Model
 
-v.0.4.0: tacotron2.v2
-- 1024 pt window
-- 256 pt shift
-- GL 1000 iters
-- R=1
-- forward with transition agent
+v.0.4.0: tacotron2.v2  
+- 1024 pt window   
+- 256 pt shift   
+- GL 1000 iters  
+- R=1   
+- forward with transition agent  
 
 ## Environments
 
@@ -53,48 +54,56 @@ v.0.4.0: tacotron2.v2
 
 ## Audio samples
 
-<!--
-| Audio parameter | Setting |  
-| --- | --- |  
-| Sampling frequency | 22050 Hz |  
-| Quantization | 16 bit, LinearPCM |  
--->
-
-1. **Ground truth**: Recorded speech
-2. **Tacotron2.v2-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
-3. **Tacotron2.v2-WNV**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: WaveNet vocoder)  
+1. **ground_truth**: ground_truth speech
+2. **tacotron2.v2-GL**: tacotron2.v2-GL speech
+3. **tacotron2.v2-WNV**: tacotron2.v2-WNV speech
 
 ### Sample1  
 
-| **Ground truth** | **Tacotron2.v2-GL** | **Tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
+| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0029.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0029.wav> </audio> | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
 
 ### Sample2  
 
-| **Ground truth** | **Tacotron2.v2-GL** | **Tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
+| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0030.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0030.wav> </audio> | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
 
 ### Sample3  
 
-| **Ground truth** | **Tacotron2.v2-GL** | **Tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
+| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0031.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0031.wav> </audio> | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
 
 ### Sample4  
 
-| **Ground truth** | **Tacotron2.v2-GL** | **Tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
+| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0032.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0032.wav> </audio> | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
 
 ### Sample5  
 
-| **Ground truth** | **Tacotron2.v2-GL** | **Tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+| <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/ground_truth/LJ050-0033.wav> </audio> | <audio controls=> <source src=egs/ljspeech/tacotron2.v2/audio/tacotron2.v2-GL/LJ050-0033.wav> </audio> | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
+| NULL | NULL | NULL |  
 
-### Other samples  
+### Other samples
 
 [https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm](https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm)
 
@@ -106,12 +115,3 @@ v.0.4.0: tacotron2.v2
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
 
-<!--
-## Acknowledgements
-
-NULL
-
-## Citation
-
-NULL
--->
