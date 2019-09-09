@@ -1,5 +1,7 @@
 # ljspeech.tacotron2.v2
 
+<link rel="stylesheet" href="styles.css">
+
 ## Creator
 
 - Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
@@ -112,6 +114,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
 | NULL | NULL | NULL |  
+
 ### Other samples
 
 [https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm](https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm)
