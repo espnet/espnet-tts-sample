@@ -54,9 +54,9 @@ v.0.4.0: tacotron2.v2
 
 ## Audio samples
 
-1. **ground_truth**: ground_truth speech
-2. **tacotron2.v2-GL**: tacotron2.v2-GL speech
-3. **tacotron2.v2-WNV**: tacotron2.v2-WNV speech
+1. **ground_truth**: Recorded speech
+2. **tacotron2.v2-GL**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: Griffin-Lim algorithm)
+3. **tacotron2.v2-WNV**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: WaveNet vocoder)
 
 ### Sample1  
 

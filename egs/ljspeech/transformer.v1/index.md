@@ -54,9 +54,9 @@ v.0.4.0: transformer.v1
 
 ## Audio samples
 
-1. **ground_truth**: ground_truth speech
-2. **transformer.v1-GL**: transformer.v1-GL speech
-3. **transformer.v1-WNV**: transformer.v1-WNV speech
+1. **ground_truth**: Recorded speech
+2. **transformer.v1-GL**: Synthesized speech (Feature generetion:transformer.v1, Waveform synthesis: Griffin-Lim algorithm)
+3. **transformer.v1-WNV**: Synthesized speech (Feature generetion:transformer.v1, Waveform synthesis: WaveNet vocoder)
 
 ### Sample1  
 
