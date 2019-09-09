@@ -51,7 +51,6 @@ v.0.4.0: tacotron2.v1
 - e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`
 - dict file: `data/lang_1char/train_no_dev_units.txt`
 
-## Samples
 ## Audio samples
 
 1. **ground_truth**: ground_truth speech
@@ -98,6 +97,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v1-GL/LJ050-0033.wav"> </audio> | NULL |  
 
+### Other samples
 
 [https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)
 

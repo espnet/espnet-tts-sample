@@ -25,9 +25,11 @@ for URL in $(grep "https:.*" -o result_md.tmp); do
     cat result_md.tmp | sed "s~${URL}~[${URL}](${URL})~" > env_model.tmp
     cat env_model.tmp > result_md.tmp
 done
-cat result_md.tmp | awk '{if((3<=NR) && (NR<=12)){print $0}}' > env.tmp
-cat result_md.tmp | awk '{if((13<=NR) && (NR<=22)){print $0}}' > model_file.tmp
-cat result_md.tmp | awk '{if((23<=NR) && (NR<=26)){print $0}}' | sed -e 's/## Samples/### Other samples/' > sample_link.tmp
+cat result_md.tmp | awk '{if($1=="##"){count++};if(count==1){print $0}}' > env.tmp
+cat result_md.tmp | awk '{if($1=="##"){count++};if(count==2){print $0}}' > model_file.tmp
+cat result_md.tmp | awk '{if($1=="##"){count++};if(count==3){print $0}}' | sed -e 's/## Samples/### Other samples/' > sample_link.tmp
 
 rm -f result_md.tmp
 rm -f env_model.tmp
+
+
