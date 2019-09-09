@@ -16,17 +16,6 @@ Middle="${model}-GL"
 Right="${model}-WNV"
 
 
-# make audio sir
-# mkdir -p ../${egs_dir}/audio/${Left}
-# mkdir -p ../${egs_dir}/audio/${Middle}
-# mkdir -p ../${egs_dir}/audio/${Right}
-for x in ${Left} ${Middle} ${Right}; do
-  if [ ! -h ../${egs_dir}/audio/${x} ]; then
-    ln -s ../../../../scripts/${in_audio_dir}/${x} ../${egs_dir}/audio/${x}
-  fi
-  :
-done
-
 # make audio_demo.tmp
 if [ $v = 1 ]; then
   layout="../layout/audio_demo_v1.md"
@@ -55,7 +44,7 @@ i=1
 find ${in_audio_dir}/${Left} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"../../../${in_audio_dir}/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
@@ -64,7 +53,7 @@ i=1
 find ${in_audio_dir}/${Middle} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Middle}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Middle}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
@@ -73,7 +62,7 @@ i=1
 find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
