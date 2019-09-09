@@ -6,9 +6,9 @@
 set -euo pipefail
 
 # input
-corpus="libritts" #"ljspeech"
-model="tacotron2.v1"
-github_id="takenori-y"
+corpus="libritts" # "ljspeech" "libritts"
+model="transformer.v1" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
+github_id="kan-bayashi" # "kan-bayashi" "takenori-y"
 . local/github_id.sh ${github_id}
 
 # file setting

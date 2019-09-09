@@ -1,4 +1,4 @@
-# v.0.5.0: transformer.v1 1024 pt window / 256 pt shift / x-vector with add integration / fast GL 64 iters
+# v.0.5.0: First multi-speaker Transformer (transformer.v1) / 1024 pt window / 256 pt shift / x-vector with add integration / fast GL 64 iters
 
 ## Environments
 
@@ -25,7 +25,7 @@
 https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp
 
 
-# v.0.3.0: tacotron2.v1 1024 pt window / 256 pt shift / default taco2 / x-vector / GL 1000 iters
+# v.0.3.0: multi-speaker Tacotron2.v1 (tacotron2.v1) / 1024 pt window / 256 pt shift / default taco2 / x-vector / GL 1000 iters
 
 ## Environments
 

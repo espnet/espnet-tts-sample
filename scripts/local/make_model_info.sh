@@ -9,15 +9,18 @@ result_md=$2
 
 # extract model info
 end_line=$(cat ${result_md} | wc -l)
-model_line=$(grep -n "${model} " ${result_md} | awk -F':' '{print $1}')
+model_line=$(grep -n "${model}" ${result_md} | awk -F':' '{print $1}')
+if [ -z ${model_line} ]; then 
+  echo "Error: there is no data of ${model}"
+  exit 1
+fi 
 tail -n $((end_line - model_line + 1)) ${result_md} | head -n 26 > result_md.tmp
 
 # make model_conf.tmp
 echo "## Model" > model_conf.tmp
 echo >> model_conf.tmp
-head -n 1 result_md.tmp | awk '{printf("%s %s  \n",$2,$3)}' >> model_conf.tmp
-head -n 1 result_md.tmp | awk '{for(i=4;i<=NF;i++){printf(" %s",$i)}}' \
-  | awk -F'/' '{for(i=1;i<=NF;i++){printf("-%s  \n",$i)}}' >> model_conf.tmp
+head -n 1 result_md.tmp | awk -F'/' '{printf("%s  \n",$1)}' | sed -e 's/# //' >> model_conf.tmp
+head -n 1 result_md.tmp | awk -F'/' '{for(i=2;i<=NF;i++){printf("-%s  \n",$i)}}' >> model_conf.tmp
 echo >> model_conf.tmp
 
 # make env.tmp & model_file.tmp & sample_link.tmp

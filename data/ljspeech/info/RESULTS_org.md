@@ -1,4 +1,4 @@
-# v.0.5.0: fastspeech.v2 / 1024 pt window / 256 pt shift / GL 1000 iters
+# v.0.5.0: fastspeech.v2 1024 pt window / 256 pt shift / GL 1000 iters
 
 ## Environments
 
@@ -24,7 +24,7 @@
 https://drive.google.com/open?id=1PSxs1VauIndwi8d5hJmZlppGRVu2zuy5
 
 
-# v.0.5.0: fastspeech.v1 / 1024 pt window / 256 pt shift / GL 1000 iters
+# v.0.5.0: fastspeech.v1 1024 pt window / 256 pt shift / GL 1000 iters
 
 ## Environments
 
@@ -50,7 +50,7 @@ https://drive.google.com/open?id=1PSxs1VauIndwi8d5hJmZlppGRVu2zuy5
 https://drive.google.com/open?id=1tnTQjpz3vrYwnhLufL8iFqVo89lAzdHT
 
 
-# v.0.4.0: transformer.v2 / 1024 pt window / 256 pt shift / GL 1000 iters / R=3 / Small
+# v.0.4.0: transformer.v2 1024 pt window / 256 pt shift / GL 1000 iters / R=3 / Small
 
 ## Environments
 
@@ -76,7 +76,7 @@ https://drive.google.com/open?id=1tnTQjpz3vrYwnhLufL8iFqVo89lAzdHT
 https://drive.google.com/open?id=1TqY5cvA2azhl7Xi3E1LFRpsTajlHxO_P
 
 
-# v.0.4.0: transformer.v1 / 1024 pt window / 256 pt shift / GL 1000 iters / R=1 / Large
+# v.0.4.0: transformer.v1 1024 pt window / 256 pt shift / GL 1000 iters / R=1 / Large
 
 ## Environments
 
@@ -103,7 +103,7 @@ https://drive.google.com/open?id=1TqY5cvA2azhl7Xi3E1LFRpsTajlHxO_P
 https://drive.google.com/open?id=14EboYVsMVcAq__dFP1p6lyoZtdobIL1X
 
 
-# v.0.4.0: tacotron2.v3 / 1024 pt window / 256 pt shift / GL 1000 iters / R=1 / location-sensitive / guided-attention
+# v.0.4.0: tacotron2.v3 1024 pt window / 256 pt shift / GL 1000 iters / R=1 / location-sensitive / guided-attention
 
 ## Environments
 
@@ -129,7 +129,7 @@ https://drive.google.com/open?id=14EboYVsMVcAq__dFP1p6lyoZtdobIL1X
 https://drive.google.com/open?id=18JgsOCWiP_JkhONasTplnHS7yaF_konr
 
 
-# v.0.4.0: tacotron2.v2 / 1024 pt window / 256 pt shift / GL 1000 iters/ R=1 / forward with transition agent
+# v.0.4.0: tacotron2.v2 1024 pt window / 256 pt shift / GL 1000 iters/ R=1 / forward with transition agent
 
 ## Environments
 
@@ -156,7 +156,7 @@ https://drive.google.com/open?id=18JgsOCWiP_JkhONasTplnHS7yaF_konr
 https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm
 
 
-# v.0.4.0: tacotron2.v1 / 1024 pt window / 256 pt shift / GL 1000 iters / R=2 / location-sensitive
+# v.0.4.0: tacotron2.v1 1024 pt window / 256 pt shift / GL 1000 iters / R=2 / location-sensitive
 
 ## Environments
 
@@ -182,7 +182,7 @@ https://drive.google.com/open?id=1cKPDQjLGs7OD8xopSK3YWIGGth37GRSm
 https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD
 
 
-# v.0.3.0: tacotron2 / 1024 pt window / 256 pt shift + default taco2 + GL 1000 iters
+# v.0.3.0: tacotron2 1024 pt window / 256 pt shift + default taco2 + GL 1000 iters
 
 ## Samples
 
