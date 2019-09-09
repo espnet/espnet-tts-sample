@@ -10,7 +10,7 @@ This is tts demo of LibriTTS [1].
 
 ## Model
 
-v.0.3.0: tacotron2.v1  
+v.0.3.0: multi-speaker Tacotron2.v1 (tacotron2.v1)   
 - 1024 pt window   
 - 256 pt shift   
 - default taco2   

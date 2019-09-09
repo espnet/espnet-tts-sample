@@ -1,6 +1,7 @@
 # libritts.transformer.v1
 
 ## Creator
+
 - Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
 
 ## Abstract
@@ -9,11 +10,11 @@ This is tts demo of LibriTTS [1].
 
 ## Model
 
-v.0.5.0: First multi-speaker Transformer
-- 1024 pt window
-- 256 pt shift
-- x-vector with add integration
-- fast GL 64 iters
+v.0.5.0: First multi-speaker Transformer (transformer.v1)   
+- 1024 pt window   
+- 256 pt shift   
+- x-vector with add integration   
+- fast GL 64 iters  
 
 ## Environments
 
@@ -23,7 +24,7 @@ v.0.5.0: First multi-speaker Transformer
 - chainer version: `chainer 6.0.0`
 - pytorch version: `pytorch 1.0.1.post2`
 - Git hash: `d359148ebecf16440526cf0b326dde58960e2d16`
-  - Commit date: `Sun Aug 11 23:08:55 2019 +0900`
+- Commit date: `Sun Aug 11 23:08:55 2019 +0900`
 
 ## Model files
 
@@ -37,62 +38,65 @@ v.0.5.0: First multi-speaker Transformer
 
 ## Audio samples
 
-<!--
-| Audio parameter | Setting |  
-| --- | --- |  
-| Sampling frequency | 22050 Hz |  
-| Quantization | 16 bit, LinearPCM |  
--->
-
-1. **Ground truth**: Recorded speech
-2. **transformer.v1-GL**: Synthesized speech (Feature generetion:transformer, Waveform synthesis: Griffin-Lim algorithm)  
-3. **transformer.v1-WNV**: Synthesized speech (Feature generetion:transformer, Waveform synthesis: WaveNet vocoder)  
+1. **ground_truth**: Recorded speech
+2. **transformer.v1-GL**: Synthesized speech (Feature generetion:transformer.v1, Waveform synthesis: Griffin-Lim algorithm)
+3. **transformer.v1-WNV**: Synthesized speech (Feature generetion:transformer.v1, Waveform synthesis: WaveNet vocoder)
 
 ### Sample1  
 
-| **Ground truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
+121_121726_000004_000003 "Also, a popular contrivance whereby love making may be suspended but not stopped during the picnic season. "
+
+| **ground_truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../data/libritts/audio/ground_truth/121_121726_000004_000003.wav"> </audio> | <audio controls=""> <source src="../../../data/libritts/audio/transformer.v1-GL/121_121726_000004_000003.wav"> </audio> | NULL |  
 
 ### Sample2  
 
-| **Ground truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
+121_121726_000005_000001 "The beggar's plea, the politician's sceptre and the drummer's ablest assistant. "
+
+| **ground_truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../data/libritts/audio/ground_truth/121_121726_000005_000001.wav"> </audio> | <audio controls=""> <source src="../../../data/libritts/audio/transformer.v1-GL/121_121726_000005_000001.wav"> </audio> | NULL |  
 
 ### Sample3  
 
-| **Ground truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
+237_126133_000002_000003 "At night, when no one knew it, the tears would come racing over the poor, forlorn little face, and would not be squeezed back. "
+
+| **ground_truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../data/libritts/audio/ground_truth/237_126133_000002_000003.wav"> </audio> | <audio controls=""> <source src="../../../data/libritts/audio/transformer.v1-GL/237_126133_000002_000003.wav"> </audio> | NULL |  
 
 ### Sample4  
 
-| **Ground truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
+260_123286_000005_000001 "He examines the horizon all round with his glass, and folds his arms with the air of an injured man. "
+
+| **ground_truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
 | --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../data/libritts/audio/ground_truth/260_123286_000005_000001.wav"> </audio> | <audio controls=""> <source src="../../../data/libritts/audio/transformer.v1-GL/260_123286_000005_000001.wav"> </audio> | NULL |  
 
 ### Sample5  
 
-| **Ground truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
-| --- | --- | --- |  
-| NULL | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+672_122797_000002_000002 "What a nice little fir!" But this was what the Tree could not bear to hear. "
 
-### Other samples  
+| **ground_truth** | **transformer.v1-GL** | **transformer.v1-WNV** |  
+| --- | --- | --- |  
+| <audio controls=""> <source src="../../../data/libritts/audio/ground_truth/672_122797_000002_000002.wav"> </audio> | <audio controls=""> <source src="../../../data/libritts/audio/transformer.v1-GL/672_122797_000002_000002.wav"> </audio> | NULL |  
+
+### Other samples
 
 [https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp](https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp)
 
+### Synthesize speech by arbitrary text 
+
+1. Go to Google colab ([tts_demo.ipynb](https://colab.research.google.com/github/espnet/interspeech2019-tutorial/blob/kan-bayashi/tts/tts_demo.ipynb))
+2. Run "Setup envrionment"
+3. Run "Use pretrained models"
+
+Please modify the option about tts model  
+Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`  
+After:  `!../../../utils/synth_wav.sh --models libritts.transformer.v1 example.txt`  
 
 ## References
 
 - [1] "LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech," [http://www.openslr.org/60/](http://www.openslr.org/60/).
 
-<!--
-## Acknowledgements
-
-NULL
-
-## Citation
-
-NULL
--->
