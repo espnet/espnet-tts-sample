@@ -57,14 +57,20 @@ find ${in_audio_dir}/${Middle} -name "*.wav" | sort | while read -r filename;do
   i=$((++i))
 done
 
-i=1
-find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
-  echo ${filename}
-  wav=$(basename ${filename})
-  cp ${filename} ../${egs_dir}/audio/${Right}/${wav}
+# i=1
+# find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
+#   echo ${filename}
+#   wav=$(basename ${filename})
+#   cp ${filename} ../${egs_dir}/audio/${Right}/${wav}
+#   cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
+#   cat audio_demo.tmp > tmp.tmp
+#   i=$((++i))
+# done
+
+# for debug
+for ((i=1; i <= $max; i++)); do
   cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
-  i=$((++i))
 done
 
 # update wave form
