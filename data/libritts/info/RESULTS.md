@@ -1,4 +1,4 @@
-# v.0.5.0: First multi-speaker Transformer 1024 pt window / 256 pt shift + x-vector with add integration + fast GL 64 iters
+# v.0.5.0: transformer.v1 1024 pt window / 256 pt shift / x-vector with add integration / fast GL 64 iters
 
 ## Environments
 
@@ -8,7 +8,7 @@
 - chainer version: `chainer 6.0.0`
 - pytorch version: `pytorch 1.0.1.post2`
 - Git hash: `d359148ebecf16440526cf0b326dde58960e2d16`
-  - Commit date: `Sun Aug 11 23:08:55 2019 +0900`
+- Commit date: `Sun Aug 11 23:08:55 2019 +0900`
 
 ## Model files
 
@@ -25,7 +25,7 @@
 https://drive.google.com/open?id=1_vrdqjM43DdN1Qz7HJkvMQ6lCMmWLeGp
 
 
-# v.0.3.0: multi-speaker Tacotron2.v1 1024 pt window / 256 pt shift + default taco2 + x-vector + GL 1000 iters
+# v.0.3.0: tacotron2.v1 1024 pt window / 256 pt shift / default taco2 / x-vector / GL 1000 iters
 
 ## Environments
 
