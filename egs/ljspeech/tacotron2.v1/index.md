@@ -64,7 +64,7 @@ LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES
 
 | **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0029.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0029.wav"> </audio> | NULL |  
 
 ### Sample2  
 
@@ -72,7 +72,7 @@ LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
 
 | **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0030.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0030.wav"> </audio> | NULL |  
 
 ### Sample3  
 
@@ -80,7 +80,7 @@ LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATIN
 
 | **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0031.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0031.wav"> </audio> | NULL |  
 
 ### Sample4  
 
@@ -88,7 +88,7 @@ LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTI
 
 | **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0032.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0032.wav"> </audio> | NULL |  
 
 ### Sample5  
 
@@ -96,7 +96,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 
 | **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0033.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="../../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0033.wav"> </audio> | NULL |  
 
 
 [https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)

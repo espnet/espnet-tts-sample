@@ -8,8 +8,7 @@ corpus=$1
 model=$2
 v=$3
 egs_dir="egs/${corpus}/${model}"
-in_audio_dir="audio/${corpus}"
-out_audio_dir="${egs_dir}/audio"
+in_audio_dir="../data/${corpus}/audio"
 max=5
 
 Left="ground_truth"
@@ -43,7 +42,7 @@ cat audio_demo.tmp > tmp.tmp
 
 # update text
 i=1
-cat data/${corpus}/text | while read -r line;do
+cat ../data/${corpus}/info/text | while read -r line;do
   utt_id=$(echo ${line} | awk '{print $1}')
   text=$(echo ${line} | awk '{for(i=2;i<=NF;i++){printf("%s ",$i)}}')
   cat tmp.tmp | sed -e "s~text${i}~${utt_id} \"${text}\"~g" > audio_demo.tmp
@@ -56,7 +55,7 @@ i=1
 find ${in_audio_dir}/${Left} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"../../../${in_audio_dir}/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done

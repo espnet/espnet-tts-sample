@@ -15,9 +15,9 @@ github_id="kan-bayashi"
 # file setting
 egs_name="${corpus}.${model}"
 egs_dir="egs/${corpus}/${model}"
-result_md=data/${corpus}/RESULTS.md
-abst_md=data/${corpus}/Abstract.md
-ref_md=data/${corpus}/Reference.md
+result_md=../data/${corpus}/info/RESULTS.md
+abst_md=../data/${corpus}/info/Abstract.md
+ref_md=../data/${corpus}/info/Reference.md
 md_file="../${egs_dir}/index.md"
 
 # make index.md
