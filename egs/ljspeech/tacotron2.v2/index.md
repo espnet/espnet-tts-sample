@@ -1,5 +1,7 @@
 # ljspeech.tacotron2.v2
 
+audio { width: 273px; }
+
 ## Creator
 
 - Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
