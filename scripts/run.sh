@@ -6,11 +6,10 @@
 set -euo pipefail
 
 # input
-corpus="ljspeech"
-model="fastspeech.v2"
-name="Tomoki Hayashi"
-belongs="Nagoya University"
-github_id="kan-bayashi"
+corpus="libritts" #"ljspeech"
+model="tacotron2.v1"
+github_id="takenori-y"
+. local/github_id.sh ${github_id}
 
 # file setting
 egs_name="${corpus}.${model}"
