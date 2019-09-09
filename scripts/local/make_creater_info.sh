@@ -11,7 +11,7 @@ github_id=$3
 
 echo "## Creator" > creater.tmp
 echo >> creater.tmp
-echo "- name (belongs) <[github_id][https://github.com/github_id]>  " \
+echo "- name (belongs) <[github_id](https://github.com/github_id)>  " \
  | sed -e "s/name/${name}/" -e "s/belongs/${belongs}/" -e "s/github_id/${github_id}/g" >> creater.tmp
 echo >> creater.tmp
 

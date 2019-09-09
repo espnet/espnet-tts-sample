@@ -17,9 +17,9 @@ Right="${model}-WNV"
 
 
 # make audio sir
-mkdir -p ../${out_audio_dir}/${Left}
-mkdir -p ../${out_audio_dir}/${Middle}
-mkdir -p ../${out_audio_dir}/${Right}
+mkdir -p ../${egs_dir}/audio/${Left}
+mkdir -p ../${egs_dir}/audio/${Middle}
+mkdir -p ../${egs_dir}/audio/${Right}
 
 # make audio_demo.tmp
 cat ../layout/audio_demo.md > tmp.tmp
@@ -41,8 +41,8 @@ i=1
 find ${in_audio_dir}/${Left} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cp ${filename} ../${out_audio_dir}/${Left}/${wav}
-  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"${out_audio_dir}/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cp ${filename} ../${egs_dir}/audio/${Left}/${wav}
+  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
@@ -51,8 +51,8 @@ i=1
 find ${in_audio_dir}/${Middle} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cp ${filename} ../${out_audio_dir}/${Middle}/${wav}
-  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"${out_audio_dir}/${Middle}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cp ${filename} ../${egs_dir}/audio/${Middle}/${wav}
+  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Middle}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
@@ -61,8 +61,8 @@ i=1
 find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
   wav=$(basename ${filename})
-  cp ${filename} ../${out_audio_dir}/${Right}/${wav}
-  cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"${out_audio_dir}/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cp ${filename} ../${egs_dir}/audio/${Right}/${wav}
+  cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"audio/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
