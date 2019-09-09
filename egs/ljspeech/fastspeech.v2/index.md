@@ -51,9 +51,9 @@ v.0.5.0: fastspeech.v2
 
 ## Audio samples
 
-1. **ground_truth**: ground_truth speech
-2. **fastspeech.v2-GL**: fastspeech.v2-GL speech
-3. **fastspeech.v2-WNV**: fastspeech.v2-WNV speech
+1. **ground_truth**: Recorded speech
+2. **fastspeech.v2-GL**: Synthesized speech (Feature generetion:fastspeech.v2, Waveform synthesis: Griffin-Lim algorithm)
+3. **fastspeech.v2-WNV**: Synthesized speech (Feature generetion:fastspeech.v2, Waveform synthesis: WaveNet vocoder)
 
 ### Sample1  
 

@@ -15,6 +15,9 @@ Left="ground_truth"
 Middle="${model}-GL"
 Right="${model}-WNV"
 
+Left_abst="Recorded speech"
+Middle_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: Griffin-Lim algorithm)"
+Right_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: WaveNet vocoder)"
 
 # make audio_demo.tmp
 if [ $v = 1 ]; then
@@ -26,7 +29,8 @@ elif [ $v = 3 ]; then
 fi
 
 cat ${layout} > tmp.tmp
-cat tmp.tmp | sed -e "s/Left/${Left}/g" -e "s/Middle/${Middle}/g" -e "s/Right/${Right}/g" > audio_demo.tmp
+cat tmp.tmp | sed -e "s/Left speech/${Left_abst}/" -e "s/Middle speech/${Middle_abst}/" -e "s/Right speech/${Right_abst}/" \
+| sed -e "s/Left/${Left}/g" -e "s/Middle/${Middle}/g" -e "s/Right/${Right}/g" > audio_demo.tmp
 cat audio_demo.tmp > tmp.tmp
 
 # update text
