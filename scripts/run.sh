@@ -7,7 +7,7 @@ set -euo pipefail
 
 # input
 corpus="ljspeech"
-model="tacotron2.v1"
+model="transformer.v2"
 name="Tomoki Hayashi"
 belongs="Nagoya University"
 github_id="kan-bayashi"
