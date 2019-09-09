@@ -4,7 +4,7 @@
 2. Run "Setup envrionment"
 3. Run "Use pretrained models"
 
-Please modify the option about tts model
-Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`
-After:  `!../../../utils/synth_wav.sh --models MODEL example.txt`
+Please modify the option about tts model  
+Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`  
+After:  `!../../../utils/synth_wav.sh --models MODEL example.txt`  
 
