@@ -40,7 +40,7 @@ local/make_model_info.sh ${model} ${result_md}
 
 # make audio demo info
 echo "Stage 5: audio_demo.md"
-local/make_audio_demo.sh ${corpus} ${model}
+local/make_audio_demo.sh ${corpus} ${model} 1
 
 # make reference info
 echo "Stage 6: ref.md"

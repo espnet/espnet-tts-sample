@@ -6,6 +6,7 @@
 # inport argument
 corpus=$1
 model=$2
+v=$3
 egs_dir="egs/${corpus}/${model}"
 in_audio_dir="audio/${corpus}"
 out_audio_dir="${egs_dir}/audio"
@@ -22,7 +23,15 @@ mkdir -p ../${egs_dir}/audio/${Middle}
 mkdir -p ../${egs_dir}/audio/${Right}
 
 # make audio_demo.tmp
-cat ../layout/audio_demo.md > tmp.tmp
+if [ $v = 1 ]; then
+  layout="../layout/audio_demo_v1.md"
+elif [ $v = 2 ]; then
+  layout="../layout/audio_demo_v2.md"
+elif [ $v = 3 ]; then
+  layout="../layout/audio_demo_v3.md"
+fi
+
+cat ${layout} > tmp.tmp
 cat tmp.tmp | sed -e "s/Left/${Left}/g" -e "s/Middle/${Middle}/g" -e "s/Right/${Right}/g" > audio_demo.tmp
 cat audio_demo.tmp > tmp.tmp
 
