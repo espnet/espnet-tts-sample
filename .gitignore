@@ -1,1 +1,4 @@
-/_layouts/default.html
+./_layouts/default.html
+./_config.yml
+./egs/*/*/_config.yml
+./assets

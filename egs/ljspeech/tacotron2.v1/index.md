@@ -2,7 +2,7 @@
 
 ## Creator
 
-- Tomoki Hayashi (Nagoya University) <[kan-bayashi][https://github.com/kan-bayashi]>  
+- Tomoki Hayashi (Nagoya University) <[kan-bayashi](https://github.com/kan-bayashi)>  
 
 ## Abstract
 
@@ -23,14 +23,14 @@ Finally, phase components are recovered with Griffin-Lim.
 Instead of using inverse mel-basis, CBHG module is used to convert log mel-filter bank to linear spectrogram.
 The recovery of the phase components is the same as `tts1`.
 
-## Model config
+## Model
 
-v.0.4.0: tacotron2.v1 
-- 1024 pt window
-- 256 pt shift
-- GL 1000 iters
-- R=2
-- location-sensitive
+v.0.4.0: tacotron2.v1  
+- 1024 pt window   
+- 256 pt shift   
+- GL 1000 iters   
+- R=2   
+- location-sensitive  
 
 ## Environments
 
@@ -43,60 +43,74 @@ v.0.4.0: tacotron2.v1
 
 ## Model files
 
-- model link: [https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs][https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs]
-- training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`  
-- decoding config file: `conf/decode.yaml`  
-- cmvn file: `data/train_no_dev/cmvn.ark`  
-- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`  
-- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`  
-- dict file: `data/lang_1char/train_no_dev_units.txt`  
+- model link: [https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs](https://drive.google.com/open?id=1dKzdaDpOkpx7kWZnvrvx2De7eZEdPHZs)
+- training config file: `conf/tuning/train_pytorch_tacotron2.v1.yaml`
+- decoding config file: `conf/decode.yaml`
+- cmvn file: `data/train_no_dev/cmvn.ark`
+- e2e file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.last1.avg.best`
+- e2e JSON file: `exp/train_no_dev_pytorch_train_pytorch_tacotron2.v1/results/model.json`
+- dict file: `data/lang_1char/train_no_dev_units.txt`
 
+## Samples
 ## Audio samples
 
-<!--
-| Audio parameter | Setting |  
-| --- | --- |  
-| Sampling frequency | 22050 Hz |  
-| Quantization | 16 bit, LinearPCM |  
--->
-
-1. **Ground truth**: Recorded speech
-2. **Tacotron2.v1-GL**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: Griffin-Lim algorithm)  
-3. **Tacotron2.v1-WNV**: Synthesized speech (Feature generetion:Tacotron2, Waveform synthesis: WaveNet vocoder)  
+1. **ground_truth**: ground_truth speech
+2. **tacotron2.v1-GL**: tacotron2.v1-GL speech
+3. **tacotron2.v1-WNV**: tacotron2.v1-WNV speech
 
 ### Sample1  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES. "
+
+| **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/graund_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0029.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-WNV/"> </audio> |  
 
 ### Sample2  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
+
+| **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/graund_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0030.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-WNV/"> </audio> |  
 
 ### Sample3  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATING AND MAINTAINING THE HIGHEST STANDARD OF EXCELLENCE AND ESPRIT, FOR ALL OF ITS PERSONNEL. "
+
+| **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/graund_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0031.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-WNV/"> </audio> |  
 
 ### Sample4  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTION OF AN OUTSTANDING DEGREE OF DEDICATION AND LOYALTY TO DUTY. "
+
+| **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/graund_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0032.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-WNV/"> </audio> |  
 
 ### Sample5  
 
-| **Ground truth** | **Tacotron2.v1-GL** | **Tacotron2.v1-WNV** |  
+LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN THE ASSASSINATION "
+
+| **ground_truth** | **tacotron2.v1-GL** | **tacotron2.v1-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="audio/graund_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/eval/LJ050-0033.wav"> </audio> | NULL |  
+| <audio controls=""> <source src="audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="audio/tacotron2.v1-WNV/"> </audio> |  
 
-### Other samples  
 
-[https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD][https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD]
+[https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD](https://drive.google.com/open?id=1ZIDPpb1Bt9V8mrnJCCptMcpIH3SpuyrD)
+
+
+### Synthesize speech by arbitrary text 
+
+1. Go to Google colab ([tts_demo.ipynb](https://colab.research.google.com/github/espnet/interspeech2019-tutorial/blob/kan-bayashi/tts/tts_demo.ipynb))
+2. Run "Setup envrionment"
+3. Run "Use pretrained models"
+
+Please modify the option about tts model
+Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`
+After:  `!../../../utils/synth_wav.sh --models ljspeech.tacotron2.v1 example.txt`
 
 ## References
 
@@ -106,12 +120,3 @@ v.0.4.0: tacotron2.v1
 - [3] Li, Naihan, et al. "Close to human quality TTS with transformer." arXiv preprint [arXiv:1809.08895](https://arxiv.org/abs/1809.08895) (2018).
 - [4] Ren, Yi, et al. "FastSpeech: Fast, Robust and Controllable Text to Speech." arXiv preprint [arXiv:1905.09263](https://arxiv.org/abs/1905.09263) (2019).
 
-<!--
-## Acknowledgements
-
-NULL
-
-## Citation
-
-NULL
--->

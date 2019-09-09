@@ -7,7 +7,7 @@ set -euo pipefail
 
 # input
 corpus="ljspeech"
-model="tacotron2.v2"
+model="tacotron2.v1"
 name="Tomoki Hayashi"
 belongs="Nagoya University"
 github_id="kan-bayashi"
@@ -41,6 +41,7 @@ local/make_model_info.sh ${model} ${result_md}
 # make audio demo info
 echo "Stage 5: audio_demo.md"
 local/make_audio_demo.sh ${corpus} ${model} 1
+cat ../layout/google_colab.md | sed -e "s/MODEL/${corpus}.${model}/" > google_colab.tmp
 
 # make reference info
 echo "Stage 6: ref.md"
@@ -54,6 +55,7 @@ cat env.tmp >> ${md_file}
 cat model_file.tmp >> ${md_file}
 cat audio_demo.tmp >> ${md_file}
 cat sample_link.tmp >> ${md_file}
+cat google_colab.tmp >> ${md_file}
 cat ref.tmp >> ${md_file}
 
 # delete tmp files
