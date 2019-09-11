@@ -9,7 +9,7 @@ result_md=$2
 
 # extract model info
 end_line=$(cat ${result_md} | wc -l)
-model_line=$(grep -n "${model}" ${result_md} | awk -F':' '{print $1}')
+model_line=$(grep -n "${model} " ${result_md} | awk -F':' '{print $1}')
 if [ -z ${model_line} ]; then 
   echo "Error: there is no data of ${model}"
   exit 1

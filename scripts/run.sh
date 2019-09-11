@@ -6,9 +6,10 @@
 set -euo pipefail
 
 # input
-corpus="libritts" # "ljspeech" "libritts"
-model="transformer.v1" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
-github_id="kan-bayashi" # "kan-bayashi" "takenori-y"
+corpus="ljspeech" # "ljspeech" "libritts"
+model="transformer.v2" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
+. conf/${corpus}.${model}.sh
+. conf/google_colab.rev1.sh
 . local/github_id.sh ${github_id}
 
 # file setting
@@ -39,23 +40,27 @@ local/make_model_info.sh ${model} ${result_md}
 
 # make audio demo info
 echo "Stage 5: audio_demo.md"
-local/make_audio_demo.sh ${corpus} ${model} 1
-cat ../layout/google_colab.md | sed -e "s/MODEL/${corpus}.${model}/" > google_colab.tmp
+local/make_audio_demo.sh ${corpus} ${model} ${vocoder_num} ${demo_num}
+
+# make google_colab info
+echo "Stage 6: google_colab.md"
+cat ../layout/google_colab.md | sed -e "s/MODEL/${corpus}.${model}/" \
+| sed -e "s~github_url~${github_url}~" -e "s~colab_url~${colab_url}~" > google_colab.tmp
 
 # make reference info
-echo "Stage 6: ref.md"
+echo "Stage 7: ref.md"
 local/make_ref_info.sh ${ref_md}
 
 # update index.md
-cat creater.tmp >> ${md_file}
-cat abst.tmp >> ${md_file}
-cat model_conf.tmp >> ${md_file}
-cat env.tmp >> ${md_file}
-cat model_file.tmp >> ${md_file}
-cat audio_demo.tmp >> ${md_file}
-cat sample_link.tmp >> ${md_file}
-cat google_colab.tmp >> ${md_file}
-cat ref.tmp >> ${md_file}
+cat creater.tmp >> ${md_file}       #stage 2
+cat abst.tmp >> ${md_file}          #stage 3
+cat model_conf.tmp >> ${md_file}    #stage 4
+cat env.tmp >> ${md_file}           #stage 4
+cat model_file.tmp >> ${md_file}    #stage 4
+cat audio_demo.tmp >> ${md_file}    #stage 5
+cat sample_link.tmp >> ${md_file}   #stage 4
+cat google_colab.tmp >> ${md_file}  #stage 6
+cat ref.tmp >> ${md_file}           #stage 7
 
 # delete tmp files
 rm -f *.tmp

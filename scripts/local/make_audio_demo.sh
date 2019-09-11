@@ -6,7 +6,9 @@
 # inport argument
 corpus=$1
 model=$2
-v=$3
+vocoder_num=$3
+demo_num=$4
+
 egs_dir="egs/${corpus}/${model}"
 in_audio_dir="../data/${corpus}/audio"
 max=5
@@ -20,12 +22,12 @@ Middle_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis
 Right_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: WaveNet vocoder)"
 
 # make audio_demo.tmp
-if [ $v = 1 ]; then
-  layout="../layout/audio_demo_v1.md"
-elif [ $v = 2 ]; then
-  layout="../layout/audio_demo_v2.md"
-elif [ $v = 3 ]; then
-  layout="../layout/audio_demo_v3.md"
+if [ ${demo_num} = 1 ]; then
+  layout="../layout/audio_demo${vocoder_num}.md"
+elif [ ${demo_num} = 2 ]; then
+  layout="../layout/audio_demo${vocoder_num}_att.md"
+elif [ ${demo_num} = 3 ]; then
+  layout="../layout/audio_demo${vocoder_num}_sp_att.md"
 fi
 
 cat ${layout} > tmp.tmp
@@ -62,14 +64,16 @@ find ${in_audio_dir}/${Middle} -name "*.wav" | sort | while read -r filename;do
   i=$((++i))
 done
 
-i=1
-find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
-  echo ${filename}
-  wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
-  cat audio_demo.tmp > tmp.tmp
-  i=$((++i))
-done
+if [ ${vocoder_num} -gt 2 ]; then
+  i=1
+  find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
+    echo ${filename}
+    wav=$(basename ${filename})
+    cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
+    cat audio_demo.tmp > tmp.tmp
+    i=$((++i))
+  done
+fi
 
 # for debug
 # for ((i=1; i <= $max; i++)); do
