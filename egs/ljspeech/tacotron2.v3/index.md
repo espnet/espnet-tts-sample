@@ -64,7 +64,7 @@ LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES
 
 | **ground_truth** | **tacotron2.v3-GL** | **tacotron2.v3-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV/LJ050-0029_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV_r9y9/LJ050-0029_gen.wav"> </audio> |  
 
 ### Sample2  
 
@@ -72,7 +72,7 @@ LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
 
 | **ground_truth** | **tacotron2.v3-GL** | **tacotron2.v3-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV/LJ050-0030_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV_r9y9/LJ050-0030_gen.wav"> </audio> |  
 
 ### Sample3  
 
@@ -80,7 +80,7 @@ LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATIN
 
 | **ground_truth** | **tacotron2.v3-GL** | **tacotron2.v3-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV/LJ050-0031_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV_r9y9/LJ050-0031_gen.wav"> </audio> |  
 
 ### Sample4  
 
@@ -88,7 +88,7 @@ LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTI
 
 | **ground_truth** | **tacotron2.v3-GL** | **tacotron2.v3-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV/LJ050-0032_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV_r9y9/LJ050-0032_gen.wav"> </audio> |  
 
 ### Sample5  
 
@@ -96,7 +96,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 
 | **ground_truth** | **tacotron2.v3-GL** | **tacotron2.v3-WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV/LJ050-0033_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v3-WNV_r9y9/LJ050-0033_gen.wav"> </audio> |  
 
 ### Other samples
 
