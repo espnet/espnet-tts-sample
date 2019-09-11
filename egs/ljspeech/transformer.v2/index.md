@@ -25,7 +25,7 @@ The recovery of the phase components is the same as `tts1`.
 
 ## Model
 
-v.0.4.0: transformer.v2  
+v.0.4.0: transformer.v2   
 - 1024 pt window   
 - 256 pt shift   
 - GL 1000 iters   
@@ -55,47 +55,46 @@ v.0.4.0: transformer.v2
 
 1. **ground_truth**: Recorded speech
 2. **transformer.v2-GL**: Synthesized speech (Feature generetion:transformer.v2, Waveform synthesis: Griffin-Lim algorithm)
-3. **transformer.v2-WNV**: Synthesized speech (Feature generetion:transformer.v2, Waveform synthesis: WaveNet vocoder)
 
 ### Sample1  
 
 LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES. "
 
-| **ground_truth** | **transformer.v2-GL** | **transformer.v2-WNV** |  
-| --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0029.wav"> </audio> | NULL |  
+| **ground_truth** | **transformer.v2-GL** |  
+| --- |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0029.wav"> </audio> |  
 
 ### Sample2  
 
 LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
 
-| **ground_truth** | **transformer.v2-GL** | **transformer.v2-WNV** |  
-| --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0030.wav"> </audio> | NULL |  
+| **ground_truth** | **transformer.v2-GL** |  
+| --- | --- |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0030.wav"> </audio> |  
 
 ### Sample3  
 
 LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATING AND MAINTAINING THE HIGHEST STANDARD OF EXCELLENCE AND ESPRIT, FOR ALL OF ITS PERSONNEL. "
 
-| **ground_truth** | **transformer.v2-GL** | **transformer.v2-WNV** |  
-| --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0031.wav"> </audio> | NULL |  
+| **ground_truth** | **transformer.v2-GL** |  
+| --- | --- |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0031.wav"> </audio> |  
 
 ### Sample4  
 
 LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTION OF AN OUTSTANDING DEGREE OF DEDICATION AND LOYALTY TO DUTY. "
 
-| **ground_truth** | **transformer.v2-GL** | **transformer.v2-WNV** |  
-| --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0032.wav"> </audio> | NULL |  
+| **ground_truth** | **transformer.v2-GL** |  
+| --- | --- |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0032.wav"> </audio> |  
 
 ### Sample5  
 
 LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN THE ASSASSINATION "
 
-| **ground_truth** | **transformer.v2-GL** | **transformer.v2-WNV** |  
-| --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0033.wav"> </audio> | NULL |  
+| **ground_truth** | **transformer.v2-GL** |  
+| --- | --- |  
+| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/transformer.v2-GL/LJ050-0033.wav"> </audio> |  
 
 ### Other samples
 
@@ -104,13 +103,16 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 
 ### Synthesize speech by arbitrary text 
 
-1. Go to Google colab ([tts_demo.ipynb](https://colab.research.google.com/github/espnet/interspeech2019-tutorial/blob/kan-bayashi/tts/tts_demo.ipynb))
-2. Run "Setup envrionment"
-3. Run "Use pretrained models"
+1. Go to [Google colab][colab] (created by [Github][github])
+2. Run "0. Installation"
+3. Run "3. Demonstration of the use of pretrained models"
 
 Please modify the option about tts model  
 Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`  
 After:  `!../../../utils/synth_wav.sh --models ljspeech.transformer.v2 example.txt`  
+
+[github]: https://github.com/espnet/interspeech2019-tutorial/blob/b87dca93f51da6a1d464a22e902912b64aabe466/notebooks/interspeech2019_tts/interspeech2019_tts.ipynb
+[colab]: https://colab.research.google.com/github/espnet/interspeech2019-tutorial/blob/master/notebooks/interspeech2019_tts/interspeech2019_tts.ipynb
 
 ## References
 
