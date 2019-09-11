@@ -6,8 +6,8 @@
 set -euo pipefail
 
 # input
-corpus="ljspeech" # "ljspeech" "libritts"
-model="transformer.v2" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
+corpus="libritts" # "ljspeech" "libritts"
+model="tacotron2.v1" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
 . conf/${corpus}.${model}.sh
 . conf/google_colab.rev1.sh
 . local/github_id.sh ${github_id}
