@@ -15,7 +15,7 @@ max=5
 
 Left="ground_truth"
 Middle="${model}-GL"
-Right="${model}-WNV_r9y9"
+Right="${model}-WNV"
 
 Left_abst="Recorded speech"
 Middle_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: Griffin-Lim algorithm)"
@@ -66,10 +66,10 @@ done
 
 if [ ${vocoder_num} -gt 2 ]; then
   i=1
-  find ${in_audio_dir}/${Right} -name "*.wav" | sort | while read -r filename;do
+  find ${in_audio_dir}/${Right}_r9y9 -name "*.wav" | sort | while read -r filename;do
     echo ${filename}
     wav=$(basename ${filename})
-    cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}/${wav}\"> </audio>~g" > audio_demo.tmp
+    cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}_r9y9/${wav}\"> </audio>~g" > audio_demo.tmp
     cat audio_demo.tmp > tmp.tmp
     i=$((++i))
   done
