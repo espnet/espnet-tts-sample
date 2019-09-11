@@ -15,7 +15,7 @@ max=5
 
 Left="ground_truth"
 Middle="${model}-GL"
-Right="${model}-WNV"
+Right="${model}-WNV_r9y9"
 
 Left_abst="Recorded speech"
 Middle_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: Griffin-Lim algorithm)"

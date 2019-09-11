@@ -6,8 +6,8 @@
 set -euo pipefail
 
 # input
-corpus="libritts" # "ljspeech" "libritts"
-model="tacotron2.v1" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
+corpus="ljspeech" # "ljspeech" "libritts"
+model="transformer.v1" # "tacotron2.v1" "transformer.v1" "fastspeech.v1"
 . conf/${corpus}.${model}.sh
 . conf/google_colab.rev1.sh
 . local/github_id.sh ${github_id}
@@ -57,10 +57,12 @@ cat abst.tmp >> ${md_file}          #stage 3
 cat model_conf.tmp >> ${md_file}    #stage 4
 cat env.tmp >> ${md_file}           #stage 4
 cat model_file.tmp >> ${md_file}    #stage 4
-cat audio_demo.tmp >> ${md_file}    #stage 5
+cat audio_demo.tmp | sed -e "s/_r9y9//" >> ${md_file}    #stage 5
 cat sample_link.tmp >> ${md_file}   #stage 4
 cat google_colab.tmp >> ${md_file}  #stage 6
 cat ref.tmp >> ${md_file}           #stage 7
+
+
 
 # delete tmp files
 rm -f *.tmp
