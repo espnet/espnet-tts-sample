@@ -2,6 +2,7 @@
 
 1. **Left**: Left speech
 2. **Middle**: Middle speech
+*The recommended browser for Audio player: Google Chrome
 
 ### Sample1  
 

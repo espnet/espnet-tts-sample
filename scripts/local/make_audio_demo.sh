@@ -6,11 +6,13 @@
 # inport argument
 corpus=$1
 model=$2
-vocoder_num=$3
+vocoder_num=$(( $3+1 ))
 demo_num=$4
 
 egs_dir="egs/${corpus}/${model}"
 in_audio_dir="../data/${corpus}/audio"
+in_att_ws_dir="../data/${corpus}/att_ws"
+in_probs_dir="../data/${corpus}/probs"
 max=5
 
 Left="ground_truth"
@@ -83,7 +85,26 @@ fi
 
 # update wave form
 # update spectrogram
+
 # update attentin weight
+i=1
+find ${in_att_ws_dir}/${model} -name "*.png" | sort | while read -r filename;do
+  echo ${filename}
+  img=$(basename ${filename})
+  cat tmp.tmp | sed -e "s~M${i}_attn~<img src=\"../../${in_att_ws_dir}/${model}/${img}\" width=\"320px\">~g" > audio_demo.tmp
+  cat audio_demo.tmp > tmp.tmp
+  i=$((++i))
+done
+
+# update probability
+i=1
+find ${in_probs_dir}/${model} -name "*.png" | sort | while read -r filename;do
+  echo ${filename}
+  img=$(basename ${filename})
+  cat tmp.tmp | sed -e "s~M${i}_probs~<img src=\"../../${in_probs_dir}/${model}/${img}\" width=\"320px\">~g" > audio_demo.tmp
+  cat audio_demo.tmp > tmp.tmp
+  i=$((++i))
+done
 
 # replace no data cell into NULL
 for place in L M R; do
@@ -94,3 +115,4 @@ for place in L M R; do
       done
   done
 done
+
