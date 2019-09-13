@@ -56,7 +56,7 @@ v.0.4.0: tacotron2.v1
 1. **ground_truth**: Recorded speech
 2. **tacotron2.v1-GL**: Synthesized speech (Feature generetion:tacotron2.v1, Waveform synthesis: Griffin-Lim algorithm)
 
-**The recommended browser for Audio player: Google Chrome**
+**\* The recommended browser for Audio player: Google Chrome**
 
 ### Sample1  
 
@@ -128,7 +128,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 1. Go to [Google colab][colab] (created by [Github][github])
 2. Run "0. Installation"
 3. Run "3. Demonstration of the use of pretrained models"
-*The recommended browser for Google colab: Google Chrome
+\* The recommended browser for Google colab: Google Chrome
 
 Please modify the option about tts model  
 Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`  

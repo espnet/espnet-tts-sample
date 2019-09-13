@@ -58,6 +58,8 @@ v.0.4.0: tacotron2.v2
 2. **tacotron2.v2-GL**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: Griffin-Lim algorithm)
 3. **tacotron2.v2-WNV**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: WaveNet vocoder)
 
+**\* The recommended browser for Audio player: Google Chrome**
+
 ### Sample1  
 
 LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES. "
@@ -65,6 +67,10 @@ LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0029_gen.wav"> </audio> |  
+
+| **Attention wight** | **Probility** |  
+| --- | --- |  
+| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0029_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0029_prob.png" width="320px"> |  
 
 ### Sample2  
 
@@ -74,6 +80,10 @@ LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0030_gen.wav"> </audio> |  
 
+| **Attention wight** | **Probility** |  
+| --- | --- |  
+| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0030_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0030_prob.png" width="320px"> |  
+
 ### Sample3  
 
 LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATING AND MAINTAINING THE HIGHEST STANDARD OF EXCELLENCE AND ESPRIT, FOR ALL OF ITS PERSONNEL. "
@@ -81,6 +91,10 @@ LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATIN
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0031_gen.wav"> </audio> |  
+
+| **Attention wight** | **Probility** |  
+| --- | --- |  
+| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0031_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0031_prob.png" width="320px"> |  
 
 ### Sample4  
 
@@ -90,6 +104,10 @@ LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTI
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0032_gen.wav"> </audio> |  
 
+| **Attention wight** | **Probility** |  
+| --- | --- |  
+| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0032_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0032_prob.png" width="320px"> |  
+
 ### Sample5  
 
 LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN THE ASSASSINATION "
@@ -97,6 +115,10 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 | **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
 | --- | --- | --- |  
 | <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0033_gen.wav"> </audio> |  
+
+| **Attention wight** | **Probility** |  
+| --- | --- |  
+| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0033_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0033_prob.png" width="320px"> |  
 
 ### Other samples
 
@@ -107,6 +129,7 @@ LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN
 1. Go to [Google colab][colab] (created by [Github][github])
 2. Run "0. Installation"
 3. Run "3. Demonstration of the use of pretrained models"
+\* The recommended browser for Google colab: Google Chrome
 
 Please modify the option about tts model  
 Before: `!../../../utils/synth_wav.sh --models ljspeech.fastspeech.v1 example.txt`  
