@@ -55,8 +55,8 @@ v.0.4.0: tacotron2.v2
 ## Audio samples
 
 1. **ground_truth**: Recorded speech
-2. **tacotron2.v2-GL**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: Griffin-Lim algorithm)
-3. **tacotron2.v2-WNV**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: WaveNet vocoder)
+2. **tacotron2.v2_GL**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: Griffin-Lim algorithm)
+3. **tacotron2.v2_WNV**: Synthesized speech (Feature generetion:tacotron2.v2, Waveform synthesis: WaveNet vocoder)
 
 **\* The recommended browser for Audio player: Google Chrome**
 
@@ -64,61 +64,61 @@ v.0.4.0: tacotron2.v2
 
 LJ050-0029 "THAT IS REFLECTED IN DEFINITE AND COMPREHENSIVE OPERATING PROCEDURES. "
 
-| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2_GL** | **tacotron2.v2_WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0029_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/ground_truth/wav/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_GL/LJ050-0029.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_WNV_r9y9/LJ050-0029_gen.wav"> </audio> |  
 
 | **Attention wight** | **Probility** |  
 | --- | --- |  
-| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0029_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0029_prob.png" width="320px"> |  
+| <img src="../../../data/ljspeech/tacotron2.v2/att_ws/LJ050-0029_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/tacotron2.v2/probs/LJ050-0029_prob.png" width="320px"> |  
 
 ### Sample2  
 
 LJ050-0030 "THE COMMISSION ALSO RECOMMENDS "
 
-| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2_GL** | **tacotron2.v2_WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0030_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/ground_truth/wav/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_GL/LJ050-0030.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_WNV_r9y9/LJ050-0030_gen.wav"> </audio> |  
 
 | **Attention wight** | **Probility** |  
 | --- | --- |  
-| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0030_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0030_prob.png" width="320px"> |  
+| <img src="../../../data/ljspeech/tacotron2.v2/att_ws/LJ050-0030_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/tacotron2.v2/probs/LJ050-0030_prob.png" width="320px"> |  
 
 ### Sample3  
 
 LJ050-0031 "THAT THE SECRET SERVICE CONSCIOUSLY SET ABOUT THE TASK OF INCULCATING AND MAINTAINING THE HIGHEST STANDARD OF EXCELLENCE AND ESPRIT, FOR ALL OF ITS PERSONNEL. "
 
-| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2_GL** | **tacotron2.v2_WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0031_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/ground_truth/wav/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_GL/LJ050-0031.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_WNV_r9y9/LJ050-0031_gen.wav"> </audio> |  
 
 | **Attention wight** | **Probility** |  
 | --- | --- |  
-| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0031_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0031_prob.png" width="320px"> |  
+| <img src="../../../data/ljspeech/tacotron2.v2/att_ws/LJ050-0031_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/tacotron2.v2/probs/LJ050-0031_prob.png" width="320px"> |  
 
 ### Sample4  
 
 LJ050-0032 "THIS INVOLVES TIGHT AND UNSWERVING DISCIPLINE AS WELL AS THE PROMOTION OF AN OUTSTANDING DEGREE OF DEDICATION AND LOYALTY TO DUTY. "
 
-| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2_GL** | **tacotron2.v2_WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0032_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/ground_truth/wav/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_GL/LJ050-0032.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_WNV_r9y9/LJ050-0032_gen.wav"> </audio> |  
 
 | **Attention wight** | **Probility** |  
 | --- | --- |  
-| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0032_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0032_prob.png" width="320px"> |  
+| <img src="../../../data/ljspeech/tacotron2.v2/att_ws/LJ050-0032_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/tacotron2.v2/probs/LJ050-0032_prob.png" width="320px"> |  
 
 ### Sample5  
 
 LJ050-0033 "THE COMMISSION EMPHASIZES THAT IT FINDS NO CAUSAL CONNECTION BETWEEN THE ASSASSINATION "
 
-| **ground_truth** | **tacotron2.v2-GL** | **tacotron2.v2-WNV** |  
+| **ground_truth** | **tacotron2.v2_GL** | **tacotron2.v2_WNV** |  
 | --- | --- | --- |  
-| <audio controls=""> <source src="../../../data/ljspeech/audio/ground_truth/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/audio/tacotron2.v2-WNV_r9y9/LJ050-0033_gen.wav"> </audio> |  
+| <audio controls=""> <source src="../../../data/ljspeech/ground_truth/wav/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_GL/LJ050-0033.wav"> </audio> | <audio controls=""> <source src="../../../data/ljspeech/tacotron2.v2/wav_WNV_r9y9/LJ050-0033_gen.wav"> </audio> |  
 
 | **Attention wight** | **Probility** |  
 | --- | --- |  
-| <img src="../../../data/ljspeech/att_ws/tacotron2.v2/LJ050-0033_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/probs/tacotron2.v2/LJ050-0033_prob.png" width="320px"> |  
+| <img src="../../../data/ljspeech/tacotron2.v2/att_ws/LJ050-0033_att_ws.png" width="320px"> | <img src="../../../data/ljspeech/tacotron2.v2/probs/LJ050-0033_prob.png" width="320px"> |  
 
 ### Other samples
 

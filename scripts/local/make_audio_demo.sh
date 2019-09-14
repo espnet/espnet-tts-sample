@@ -10,14 +10,14 @@ vocoder_num=$(( $3+1 ))
 demo_num=$4
 
 egs_dir="egs/${corpus}/${model}"
-in_audio_dir="../data/${corpus}/audio"
-in_att_ws_dir="../data/${corpus}/att_ws"
-in_probs_dir="../data/${corpus}/probs"
+in_audio_dir="../data/${corpus}/${model}/wav"
+in_att_ws_dir="../data/${corpus}/${model}/att_ws"
+in_probs_dir="../data/${corpus}/${model}/probs"
 max=5
 
 Left="ground_truth"
-Middle="${model}-GL"
-Right="${model}-WNV"
+Middle="${model}_GL"
+Right="${model}_WNV"
 
 Left_abst="Recorded speech"
 Middle_abst="Synthesized speech (Feature generetion:${model}, Waveform synthesis: Griffin-Lim algorithm)"
@@ -39,7 +39,7 @@ cat audio_demo.tmp > tmp.tmp
 
 # update text
 i=1
-cat ../data/${corpus}/info/text | while read -r line;do
+cat ../data/${corpus}/${model}/text/text | while read -r line;do
   utt_id=$(echo ${line} | awk '{print $1}')
   text=$(echo ${line} | awk '{for(i=2;i<=NF;i++){printf("%s ",$i)}}')
   cat tmp.tmp | sed -e "s~text${i}~${utt_id} \"${text}\"~g" > audio_demo.tmp
@@ -49,29 +49,26 @@ done
 
 # update wav_data
 i=1
-find ${in_audio_dir}/${Left} -name "*.wav" | sort | while read -r filename;do
+find ../data/${corpus}/${Left}/wav -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
-  wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Left}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~L${i}_wavd~<audio controls=\"\"> <source src=\"../../${filename}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
 
 i=1
-find ${in_audio_dir}/${Middle} -name "*.wav" | sort | while read -r filename;do
+find ${in_audio_dir}_GL -name "*.wav" | sort | while read -r filename;do
   echo ${filename}
-  wav=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Middle}/${wav}\"> </audio>~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~M${i}_wavd~<audio controls=\"\"> <source src=\"../../${filename}\"> </audio>~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
 
 if [ ${vocoder_num} -gt 2 ]; then
   i=1
-  find ${in_audio_dir}/${Right}_r9y9 -name "*.wav" | sort | while read -r filename;do
+  find ${in_audio_dir}_WNV_r9y9 -name "*.wav" | sort | while read -r filename;do
     echo ${filename}
-    wav=$(basename ${filename})
-    cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${in_audio_dir}/${Right}_r9y9/${wav}\"> </audio>~g" > audio_demo.tmp
+    cat tmp.tmp | sed -e "s~R${i}_wavd~<audio controls=\"\"> <source src=\"../../${filename}\"> </audio>~g" > audio_demo.tmp
     cat audio_demo.tmp > tmp.tmp
     i=$((++i))
   done
@@ -88,20 +85,18 @@ fi
 
 # update attentin weight
 i=1
-find ${in_att_ws_dir}/${model} -name "*.png" | sort | while read -r filename;do
+find ${in_att_ws_dir} -name "*.png" | sort | while read -r filename;do
   echo ${filename}
-  img=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~M${i}_attn~<img src=\"../../${in_att_ws_dir}/${model}/${img}\" width=\"320px\">~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~M${i}_attn~<img src=\"../../${filename}\" width=\"320px\">~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
 
 # update probability
 i=1
-find ${in_probs_dir}/${model} -name "*.png" | sort | while read -r filename;do
+find ${in_probs_dir} -name "*.png" | sort | while read -r filename;do
   echo ${filename}
-  img=$(basename ${filename})
-  cat tmp.tmp | sed -e "s~M${i}_probs~<img src=\"../../${in_probs_dir}/${model}/${img}\" width=\"320px\">~g" > audio_demo.tmp
+  cat tmp.tmp | sed -e "s~M${i}_probs~<img src=\"../../${filename}\" width=\"320px\">~g" > audio_demo.tmp
   cat audio_demo.tmp > tmp.tmp
   i=$((++i))
 done
